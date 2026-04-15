@@ -1,8 +1,55 @@
-streamlit==1.35.0
-fastapi==0.112.2
-pydantic==1.10.9
-uvicorn==0.30.6
-mysql-connector-python==8.0.33
-pandas==2.0.2
-requests==2.31.0
-pytest==8.3.2
+# ============================================================
+#  Expense Tracker — Personal Finance Dashboard
+#  Python Dependencies
+# ============================================================
+#
+#  Install all dependencies with:
+#     pip install -r requirements.txt
+#
+#  Recommended: use a virtual environment
+#     python -m venv venv && source venv/bin/activate  (macOS/Linux)
+#     python -m venv venv && venv\Scripts\activate     (Windows)
+# ============================================================
+
+
+# ----------------------------
+# Frontend
+# ----------------------------
+streamlit==1.35.0              # Interactive web dashboard UI
+
+
+# ----------------------------
+# Backend — API Server
+# ----------------------------
+fastapi==0.112.2               # High-performance REST API framework
+uvicorn==0.30.6                # ASGI server to run FastAPI
+
+
+# ----------------------------
+# Data Validation & Schemas
+# ----------------------------
+pydantic==1.10.9               # Request/response model validation
+
+
+# ----------------------------
+# Database
+# ----------------------------
+mysql-connector-python==8.0.33 # MySQL database driver
+
+
+# ----------------------------
+# Data Processing
+# ----------------------------
+pandas==2.0.2                  # Data aggregation and analytics
+
+
+# ----------------------------
+# HTTP Client
+# ----------------------------
+requests==2.31.0               # Frontend → Backend API communication
+
+
+# ----------------------------
+# Testing
+# ----------------------------
+pytest==8.3.2                  # Unit and integration test framework
