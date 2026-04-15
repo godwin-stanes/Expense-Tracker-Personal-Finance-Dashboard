@@ -1,0 +1,14 @@
+2026-04-15 13:30:48,997 - db_helper - INFO - fetch_expenses_for_date called with 2024-08-01
+2026-04-15 13:30:51,077 - db_helper - INFO - fetch_expense_summary_by_months
+2026-04-15 13:32:48,333 - db_helper - INFO - fetch_expenses_for_date called with 2024-08-01
+2026-04-15 13:32:50,404 - db_helper - INFO - fetch_expense_summary_by_months
+2026-04-15 13:38:42,195 - db_helper - INFO - fetch_expenses_for_date called with 2024-08-01
+2026-04-15 13:38:44,239 - db_helper - INFO - fetch_expense_summary_by_months
+2026-04-15 13:41:34,430 - db_helper - INFO - fetch_expenses_for_date called with 2024-08-01
+2026-04-15 13:41:36,499 - db_helper - INFO - fetch_expense_summary_by_months
+2026-04-15 13:42:22,482 - db_helper - INFO - fetch_expenses_for_date called with 2024-08-01
+2026-04-15 13:42:24,553 - db_helper - INFO - fetch_expense_summary_by_months
+2026-04-15 13:42:42,709 - db_helper - INFO - fetch_expenses_for_date called with 2024-08-01
+2026-04-15 13:42:44,780 - db_helper - INFO - fetch_expense_summary_by_months
+2026-04-15 13:45:05,150 - db_helper - INFO - fetch_expenses_for_date called with 2024-08-01
+2026-04-15 13:45:07,240 - db_helper - INFO - fetch_expense_summary_by_months
