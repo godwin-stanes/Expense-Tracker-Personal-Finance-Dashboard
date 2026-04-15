@@ -67,17 +67,25 @@ def add_update_tab():
                 notes    = ""
 
             col1, col2, col3 = st.columns([2, 2, 3])
+
             with col1:
                 amount_input = st.number_input(
                     label="Amount", min_value=0.0, step=1.0, value=amount,
                     key=f"amount_{i}", label_visibility="collapsed"
                 )
+
             with col2:
+                # ✅ FIXED LINE (SAFE INDEX)
+                safe_index = categories.index(category) if category in categories else 0
+
                 category_input = st.selectbox(
-                    label="Category", options=categories,
-                    index=categories.index(category),
-                    key=f"category_{i}", label_visibility="collapsed"
+                    label="Category",
+                    options=categories,
+                    index=safe_index,
+                    key=f"category_{i}",
+                    label_visibility="collapsed"
                 )
+
             with col3:
                 notes_input = st.text_input(
                     label="Notes", value=notes,
@@ -121,8 +129,10 @@ def add_update_tab():
             'Preview</div>',
             unsafe_allow_html=True
         )
+
         total = sum(e['amount'] for e in filled)
         cols = st.columns(min(len(filled), 5))
+
         for idx, (col, exp) in enumerate(zip(cols, filled)):
             fg, bg = CAT_COLORS.get(exp['category'], ("#e8e8f0", "#1e1e2e"))
             with col:
